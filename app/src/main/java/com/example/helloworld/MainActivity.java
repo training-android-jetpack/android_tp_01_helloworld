@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Spinner spinner;
     private ArrayAdapter adapter;
-    private String[] pays = {"France", "Espagne", "Italie", "Ukraine"};
+    private String[] pays = {"France", "Espagne", "Italie", "Ukraine"}; // TODO interalization
 
     private ToggleButton toggleButton1;
     private ToggleButton toggleButton2;
@@ -56,17 +56,17 @@ public class MainActivity extends AppCompatActivity {
 
         // CheckBox
         checkBox1 = new CheckBox(this);
-        checkBox1.setText("Français");
+        checkBox1.setText(R.string.francais);
         checkBox2 = new CheckBox(this);
-        checkBox2.setText("Anglais");
+        checkBox2.setText(R.string.anglais);
 
         // RadioGroup
         radioGroup = new RadioGroup(this);
         radioGroup.setOrientation(LinearLayout.HORIZONTAL);
         radioButton1 = new RadioButton(this);
-        radioButton1.setText("Marié");
+        radioButton1.setText(R.string.marie);
         radioButton2 = new RadioButton(this);
-        radioButton2.setText("Célibataire");
+        radioButton2.setText(R.string.celibataire);
         radioGroup.addView(radioButton1);
         radioGroup.addView(radioButton2);
 

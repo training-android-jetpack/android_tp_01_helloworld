@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+    <string name="francais">French</string>
+    <string name="anglais">English</string>
+    <string name="italie">Italia</string>
+    <string name="marie">Married</string>
+    <string name="celibataire">Single</string>
 </resources>
