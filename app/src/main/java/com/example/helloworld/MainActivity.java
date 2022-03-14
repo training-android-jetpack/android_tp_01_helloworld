@@ -7,11 +7,13 @@ import android.text.Layout;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
     // On definit les ViewGroup(LinearLayout,.. ), et les Views (TextView, EditText,..)
@@ -25,9 +27,15 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton1;
     private RadioButton radioButton2;
+
     private Spinner spinner;
     private ArrayAdapter adapter;
-    private String[] pays = {"France", "Espagne", "Italie"};
+    private String[] pays = {"France", "Espagne", "Italie", "Ukraine"};
+
+    private ToggleButton toggleButton1;
+    private ToggleButton toggleButton2;
+
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +75,15 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, pays);
         spinner.setAdapter(adapter);
 
+        // ToggleButton
+        toggleButton1 = new ToggleButton(this);
+        toggleButton1.setText("Active");
+        toggleButton2 = new ToggleButton(this);
+        toggleButton2.setText("Off");
+
+        // ImageView
+        imageView = new ImageView(this);
+        imageView.setImageResource(R.drawable.raw);
 
         // add view into viewGroup
         layout.addView(text1);
@@ -77,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
         layout.addView(checkBox2);
         layout.addView(radioGroup);
         layout.addView(spinner);
+        layout.addView(toggleButton1);
+        layout.addView(toggleButton2);
+        layout.addView(imageView);
 
         setContentView(layout);
 //        setContentView(R.layout.activity_main);
