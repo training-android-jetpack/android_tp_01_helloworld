@@ -2,8 +2,10 @@ package com.example.helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Layout;
+import android.util.TypedValue;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -16,7 +18,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
-    // On definit les ViewGroup(LinearLayout,.. ), et les Views (TextView, EditText,..)
+    // On definit les ViewGroup(LinearLayout, RadioGroup.. ), et les Views (TextView, EditText,..)
     private LinearLayout layout;
     private TextView text1;
     private TextView text2;
@@ -30,12 +32,15 @@ public class MainActivity extends AppCompatActivity {
 
     private Spinner spinner;
     private ArrayAdapter adapter;
-    private String[] pays = {"France", "Espagne", "Italie", "Ukraine"}; // TODO interalization
+    private String[] pays = {"France", "Espagne", "Italie", "Ukraine"};
 
     private ToggleButton toggleButton1;
     private ToggleButton toggleButton2;
 
     private ImageView imageView;
+
+    LinearLayout.LayoutParams layoutParams; // define dimensions
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +75,11 @@ public class MainActivity extends AppCompatActivity {
         radioGroup.addView(radioButton1);
         radioGroup.addView(radioButton2);
 
+        // init model for spinner
+//        String [] pays = {this.getString(R.string.francais),
+//                            this.getString((R.string.anglais)),
+//                                    this.getString((R.string.italie))};
+        String [] pays = getResources().getStringArray(R.array.list);
         // Spinner
         spinner = new Spinner(this);
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, pays);
@@ -84,6 +94,16 @@ public class MainActivity extends AppCompatActivity {
         // ImageView
         imageView = new ImageView(this);
         imageView.setImageResource(R.drawable.raw);
+
+        layoutParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        editText1.setLayoutParams(layoutParams);
+        // SP est une unité indépendante de la résultion de l'écran qui
+        // depend des preferences utilisatuer que on applique aux taille de caractères
+        // size in float
+        text1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40f);
+        text1.setTextColor(Color.BLUE);
 
         // add view into viewGroup
         layout.addView(text1);

@@ -6,4 +6,9 @@
     <string name="italie">Italie</string>
     <string name="marie">Marié</string>
     <string name="celibataire">Célibataire</string>
+    <string-array name="list">
+        <item>France</item>
+        <item>Angleterre</item>
+        <item>Italie</item>
+    </string-array>
 </resources>
