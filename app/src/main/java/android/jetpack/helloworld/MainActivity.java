@@ -1,10 +1,7 @@
-package com.example.helloworld;
-
-import androidx.appcompat.app.AppCompatActivity;
+package android.jetpack.helloworld;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Layout;
 import android.util.TypedValue;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
@@ -16,6 +13,8 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     // On definit les ViewGroup(LinearLayout, RadioGroup.. ), et les Views (TextView, EditText,..)
@@ -79,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 //        String [] pays = {this.getString(R.string.francais),
 //                            this.getString((R.string.anglais)),
 //                                    this.getString((R.string.italie))};
-        String [] pays = getResources().getStringArray(R.array.list);
+        String[] pays = getResources().getStringArray(R.array.list);
         // Spinner
         spinner = new Spinner(this);
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, pays);

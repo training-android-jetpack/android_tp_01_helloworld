@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package android.jetpack.helloworld;
 
 import android.content.Context;
 
