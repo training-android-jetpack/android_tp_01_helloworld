@@ -8,7 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
-    // On definit les ViewGroup(LinearLayout, RadioGroup.. ), et les Views (TextView, EditText,..)
+    // On definit les ViewGroup(LinearLayout, RadioGroup.. ),
+    // et les Views (TextView, EditText,..)
     private lateinit var layout: LinearLayout
     private lateinit var text1: TextView
     private lateinit var text2: TextView
@@ -62,7 +63,11 @@ class MainActivity : AppCompatActivity() {
         val pays = resources.getStringArray(R.array.list)
         // Spinner
         spinner = Spinner(this)
-        adapter = ArrayAdapter<Any?>(this, android.R.layout.simple_list_item_1, pays)
+        adapter = ArrayAdapter<Any?>(
+            this,
+            android.R.layout.simple_list_item_1,
+            pays
+        )
         spinner.adapter = adapter
 
         // ToggleButton
@@ -80,8 +85,8 @@ class MainActivity : AppCompatActivity() {
         )
         editText1.layoutParams = layoutParams
         // SP est une unité indépendante de la résultion de l'écran qui
-        // depend des preferences utilisatuer que on applique aux taille de caractères
-        // size in float
+        // depend des preferences utilisatuer que on applique
+        // aux tailles de caractères size in float
         text1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40f)
         text1.setTextColor(Color.BLUE)
 
