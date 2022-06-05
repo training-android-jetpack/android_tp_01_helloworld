@@ -1,12 +1,10 @@
 package android.jetpack
 
-import org.junit.Test
+import kotlin.test.Test
+import kotlin.test.assertEquals
 
-import org.junit.Assert.*
 
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
-    }
+    fun addition_isCorrect() = assertEquals(expected = 4, actual = 2 + 2)
 }
