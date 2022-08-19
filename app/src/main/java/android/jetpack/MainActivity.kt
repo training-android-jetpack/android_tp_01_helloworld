@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 
 class MainActivity : AppCompatActivity() {
-    // On definit les ViewGroup(LinearLayout, RadioGroup.. ),
+    // On définit les ViewGroup(LinearLayout, RadioGroup.. ),
     // et les Views (TextView, EditText,..)
     private lateinit var layout: LinearLayout
     private lateinit var text1: TextView
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
         )
         editText1.layoutParams = layoutParams
         // SP est une unité indépendante de la résultion de l'écran qui
-        // depend des preferences utilisatuer que on applique
+        // depend des preferences utilisateur que on applique
         // aux tailles de caractères size in float
         text1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40f)
         text1.setTextColor(Color.BLUE)
@@ -103,6 +103,7 @@ class MainActivity : AppCompatActivity() {
         layout.addView(toggleButton2)
         layout.addView(imageView)
         setContentView(layout)
+        //on supprime le lien par generé par défaut vers activity_main layout
         //        setContentView(R.layout.activity_main);
     }
 }
