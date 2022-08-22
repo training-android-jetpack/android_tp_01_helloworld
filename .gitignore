@@ -13,3 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+/.~lock.exerciceandroid.odt#
+/.idea/compiler.xml
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/vcs.xml
