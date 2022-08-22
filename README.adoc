@@ -16,8 +16,11 @@ gradle scripts? +
 
 == 4) En utilisant des LinearLayout realisez l’écran suivant, et internationalisez l’application avec une version anglaise
 
-=== [underline]#EXERCICE# 1: En partant de l’activity realise hier, enlever l’image et ajouter un bouton qui permet de recuperer la liste des informations saisies et les afficher dans le LOGCAT.
+=== _EXERCICE 1:_
+En partant de l’activity realise hier, enlever l’image et ajouter un bouton qui permet de recuperer la liste des informations saisies et les afficher dans le LOGCAT.
 
-=== EXERCICE2: En partant de l’activity realise hier, enlever l’image et ajouter un bouton qui permet de recuperer la liste des informations saisies et les afficher dans le LOGCAT.(remplacez la suite des if qui permettent de tester si un bouton radio ou un chekbox a ete coche par une boucle)
+=== _EXERCICE2:_
+En partant de l’activity realise hier, enlever l’image et ajouter un bouton qui permet de recuperer la liste des informations saisies et les afficher dans le LOGCAT.(remplacez la suite des if qui permettent de tester si un bouton radio ou un chekbox a ete coche par une boucle)
 
-=== EXERCICE3: Creez une classe qui va permettre de creez des objets qui permettront de stocker les valeurs saisies dansl’activity. Lorsque on clique sur le bouton , un objet est  crée avec les valeurs saisies dans l’activity , et sera stocke dans un ArrayList qui sera affiche dans le logcat.
+=== _EXERCICE3:_
+Creez une classe qui va permettre de creez des objets qui permettront de stocker les valeurs saisies dansl’activity. Lorsque on clique sur le bouton , un objet est  crée avec les valeurs saisies dans l’activity , et sera stocke dans un ArrayList qui sera affiche dans le logcat.
