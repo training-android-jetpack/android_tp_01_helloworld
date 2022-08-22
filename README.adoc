@@ -1,58 +1,23 @@
-TRAVAUX PRATIQUES ANDROID
+= TRAVAUX PRATIQUES ANDROID
 
-1) Creez un projet android que l’on nomme TPandroid1 avec une empty activity
+== 1) Creez un projet android que l’on nomme TP01androidHelloWorld avec une empty activity
 
-2) Indiquez a quoi serve chacun des dossiers  et des fichiers suivants :
+== 2) Indiquez a quoi serve chacun des dossiers  et des fichiers suivants:
+AndroidManifest.xml? +
+Java? +
+Res? +
+Drawable? +
+Layout? +
+Mipmap? +
+Values? +
+gradle scripts? +
 
- AndroidManifest.xml ?
- Java ?
- Res ?
- Drawable ?
-Layout ?
-Mipmap ?
-Values ?
-gradle scripts ?
+== 3) Créez un émulateur de type pixel4, avec l’image nougat
 
-3) Creez un emulateur de type pixel4, avec l’image nougat ?
+== 4) En utilisant des LinearLayout realisez l’écran suivant, et internationalisez l’application avec une version anglaise
 
-4) EN UTILISANT DES LINEARLAYOUT REALISEZ L’ECRAN SUIVANT , ET INTERNATIONALISEZ l’APPLICATION AVEC UNE VERSION ANGLAISE
+=== EXERCICE 1: En partant de l’activity realise hier, enlever l’image et ajouter un bouton qui permet de recuperer la liste des informations saisies et les afficher dans le LOGCAT.
 
+=== EXERCICE2: En partant de l’activity realise hier, enlever l’image et ajouter un bouton qui permet de recuperer la liste des informations saisies et les afficher dans le LOGCAT.(remplacez la suite des if qui permettent de tester si un bouton radio ou un chekbox a ete coche par une boucle)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-EXERCICE  1 : En partant de l’activity realise hier, enlever l’image et ajouter un bouton qui permet de recuperer la liste des informations saisies et les afficher dans le LOGCAT.
-
-EXERCICE2 : En partant de l’activity realise hier, enlever l’image et ajouter un bouton qui permet de recuperer la liste des informations saisies et les afficher dans le LOGCAT.(remplacez la suite des if qui permettent de tester si un bouton radio ou un chekbox a ete coche par une boucle)
-
-EXERCICE3 : Creez une classe qui va permettre de creez des objets qui permettront de stocker les valeurs saisies dansl’activity. Lorsque on clique sur le bouton , un objet est  crée avec les valeurs saisies dans l’activity , et sera stocke dans un ArrayList qui sera affiche dans le logcat.
-
-http://192.169.1.149/partage
+=== EXERCICE3: Creez une classe qui va permettre de creez des objets qui permettront de stocker les valeurs saisies dansl’activity. Lorsque on clique sur le bouton , un objet est  crée avec les valeurs saisies dans l’activity , et sera stocke dans un ArrayList qui sera affiche dans le logcat.
