@@ -1,6 +1,6 @@
 = TRAVAUX PRATIQUES ANDROID
 
-== 1) Creez un projet android que l’on nomme TP01androidHelloWorld avec une empty activity
+== 1) Créer un projet android que l’on nomme tp_01_helloworld avec une empty activity
 
 == 2) Indiquez a quoi serve chacun des dossiers  et des fichiers suivants:
 AndroidManifest.xml? +
